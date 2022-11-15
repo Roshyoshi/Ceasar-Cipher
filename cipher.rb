@@ -1,6 +1,6 @@
 def ceasar_cipher(string, factor)
-  chars = string.split("")
-  chars =chars.map do |char|
+  chars = string.split('')
+  chars = chars.map do |char|
     is_letter = false
     diff = 0
     num = char.ord
@@ -17,7 +17,7 @@ def ceasar_cipher(string, factor)
       until current == 0
         if num == 90
           num = 65
-        else 
+        else
           num += 1
         end
         current -= 1
@@ -28,7 +28,6 @@ def ceasar_cipher(string, factor)
     num.chr
   end
   chars.join
-  
 end
 
-puts ceasar_cipher("What a string!", 5)
+puts ceasar_cipher('What a string!', 5)
